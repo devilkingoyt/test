@@ -1,0 +1,91 @@
+footer{
+    box-sizing: border-box;
+    margin-top: 95vh;
+    padding: 10px 10%;
+    width: 100%;
+    background-color: #002C54;
+    color: #efefef;
+    display: flex;
+}
+footer div{
+    text-align: center;
+}
+.foot-center{
+    flex-grow: 2;
+}
+
+.foot-right a{
+    display: inline-block;
+    text-decoration: none;
+    color: #efefef;
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+footer div h3{
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+.foot-left a{
+    display: block;
+    text-decoration: none;
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.foot-right span{
+    display: block;
+    font-size: 1rem;
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    footer{
+        flex-direction: column;
+    }
+    .foot-center,
+    .foot-right{
+        flex-basis: 100%;
+    }
+    footer div{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    footer{
+        margin-top: 60vh;
+    }
+    .foot-center,
+    .foot-right{
+        flex-basis: 100%;
+    }
+    .foot-left a{
+        font-size: 1.2rem;
+    }
+    .foot-right span{
+        font-size: 0.8rem;
+    }
+    
+}
+
+@media only screen and (max-width: 320px) {
+    footer{
+        margin-top: 45vh;
+    }
+    .foot-center,
+    .foot-right{
+        flex-basis: 100%;
+    }
+    .foot-left a{
+        font-size: 1rem;
+    }
+    .foot-right span{
+        font-size: 0.7rem;
+    }
+}
+
+.social-media a{
+    margin-right: 20px;
+    font-size: 2rem;
+}

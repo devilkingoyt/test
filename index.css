@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition-duration: 0.2s;
+    transition-delay: 0.5ms;
+}
+body{
+    background-color: #CADCFC;
+}
+
+                /* This is the main body css */
+                
+
+/* This is the main body css */
+
+    /* header starts */
+
+    .header {
+        background-color: #002C54;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 90vh;
+    }
+    .slider {
+        width: 100%;
+        position: relative;
+        height: 90vh;
+        background-color: black;
+    }
+    
+    .slider ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .slider li {
+        position: absolute;
+        top: 0;
+        left: 2.5vw;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+    
+    .slider img {
+        width: 95vw;
+        height: 90vh;
+    }
+    
+    .slider li.active {
+        opacity: 1;
+    }
